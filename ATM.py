@@ -168,8 +168,8 @@ class atm:
             self.txtReceipt.insert(END,'\t\tThanks for choosing iBank\n')
 
         def statement():
-            pinNo1 = str(self.txtReceipt.get("1.0", "end-1c"))
-            pinNo2 = str(pinNo1)
+            pinNo1 = int(self.txtReceipt.get("1.0", "end-1c"))
+            pinNo2 = float(pinNo1)
             pinNo3 = float(pinNo2)
             pinNo4 = float(1299 - (pinNo3))
             self.txtReceipt.delete("1.0",END)
